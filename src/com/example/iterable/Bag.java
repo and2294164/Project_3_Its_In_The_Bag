@@ -43,5 +43,11 @@ public class Bag<T> implements Container<T>{
         return bag.spliterator();
     }
 
-    //todo: create a tostring
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Bag{");
+        sb.append("bag=").append(bag);
+        sb.append('}');
+        return sb.toString();
+    }
 }

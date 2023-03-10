@@ -42,5 +42,12 @@ public class BagManager {
         while (iter.hasNext()) {
             System.out.println(iter.next());
         }
+
+        System.out.println("\nExtra Credit Testing: \nTesting forEach:");
+        stringBag.forEach(System.out::println);
+        System.out.println("\nTesting spliterator:");
+        System.out.println( stringBag.spliterator().characteristics() );
+        System.out.println("I don't know what that means, but the spliterator works!");
+
     }
 }
